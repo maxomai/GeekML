@@ -2,7 +2,7 @@
 	"$schema": "http://json-schema.org/draft-04/schema#",
 	"title": "GeekML",
 	"description": "Markup for a Geek",
-	"type": "object"
+	"type": "object",
 	"properties": {
 		"name": {
 			"description": "The geek's name",
@@ -12,7 +12,7 @@
 			"description": "The date (ISO-8601 formatted) this markup was crafted; should work with Javascript call Date.parse()",
 			"type": "string"
 		},
-		"summary: {
+		"summary": {
 			"description": "A paragraph describing the geek.",
 			"type": "string"
 		},
