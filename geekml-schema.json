@@ -9,57 +9,47 @@
 			"type": "string"
 		},
 		"date-made": {
-			"description": "The date (ISO-8601 formatted) this markup was crafted.",
-			/* Google "ISO-8601 formatted JSON dates" for more information; should work with 
-			JavaScript call Date.parse(). */ 
+			"description": "The date (ISO-8601 formatted) this markup was crafted; should work with Javascript call Date.parse()",
 			"type": "string"
 		},
 		"summary: {
 			"description": "A paragraph describing the geek.",
 			"type": "string"
 		},
-        /* "options": {
-            "type": "array", <-- done
-            "minItems": 1, <-- done
-            "items": { "type": "string" },
-            "uniqueItems": true
-        } */
 		"contact-data": {
 			"description": "How to contact the geek: email, phone, etc.",
 			"type": "array", 
-			"uniqueItems": false, /* one can have multiple emails for example */
+			"uniqueItems": false, 
 			"items": { "ref": "#/definitions/contact" }
 		},
 		"media": {
 			"description": "The geek's social media presence: blogs, Twitter accounts, etc.",
 			"type": "array", 
-			"uniqueItems": false, /* and also multiple blogs */
+			"uniqueItems": false, 
 			"items": { "ref": "#/definitions/media" }
 		},
 		"skills": {
 			"description": "The geek's geeky skills, such as programming, advanced math, or knitting.",
 			"type": "array", 
-			"uniqueItems": true, /* each skill is unique - you can't be a python programmer twice. */
+			"uniqueItems": true, 
 			"items": { "ref": "#/definitions/ranking" }
 		},
 		"organizations": {
 			"description": "What groups the geek belongs to, such as MENSA or a Linux User Group.",
 			"type": "array", 
-			"uniqueItems": true, /* you can't be a member of the same organization twice. */
+			"uniqueItems": true, 
 			"items": { "ref": "#/definitions/ranking" }
 		},
 		"games": {
 			"description": "The geek's favorite games, such as Dungeons and Dragons or HALO.",
 			"type": "array", 
-			"uniqueItems": true, /* you can't like the same game twice at one 
-						time, no matter how much you like it. */
+			"uniqueItems": true, 
 			"items": { "ref": "#/definitions/ranking" }
 		},
 		"fandoms": {
 			"description": "The geek's favorite shows, movies, books, etc.",
 			"type": "array", 
-			"uniqueItems": true, /* you can't like the same book twice at one 
-						time, no matter how many times you read it. */
+			"uniqueItems": true, 
 			"items": { "ref": "#/definitions/ranking" }
 		}
 	},
