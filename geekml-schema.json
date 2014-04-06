@@ -28,41 +28,69 @@
 			"description": "How to contact the geek: email, phone, etc.",
 			"type": "array", 
 			"uniqueItems": false, /* one can have multiple emails for example */
-			"items": { "type": "object" } /* todo */
+			"items": { "ref": "#/definitions/contact" }
 		},
 		"media": {
 			"description": "The geek's social media presence: blogs, Twitter accounts, etc.",
 			"type": "array", 
 			"uniqueItems": false, /* and also multiple blogs */
-			"items": { "type": "object" } /* todo */
+			"items": { "ref": "#/definitions/media" }
 		},
 		"skills": {
 			"description": "The geek's geeky skills, such as programming, advanced math, or knitting.",
 			"type": "array", 
 			"uniqueItems": true, /* each skill is unique - you can't be a python programmer twice. */
-			"items": { "type": "object" } /* todo */
+			"items": { "ref": "#/definitions/ranking" }
 		},
 		"organizations": {
 			"description": "What groups the geek belongs to, such as MENSA or a Linux User Group.",
 			"type": "array", 
 			"uniqueItems": true, /* you can't be a member of the same organization twice. */
-			"items": { "type": "object" } /* todo */
+			"items": { "ref": "#/definitions/ranking" }
 		},
 		"games": {
 			"description": "The geek's favorite games, such as Dungeons and Dragons or HALO.",
 			"type": "array", 
 			"uniqueItems": true, /* you can't like the same game twice at one 
 						time, no matter how much you like it. */
-			"items": { "type": "object" } /* todo */
+			"items": { "ref": "#/definitions/ranking" }
 		},
 		"fandoms": {
 			"description": "The geek's favorite shows, movies, books, etc.",
 			"type": "array", 
 			"uniqueItems": true, /* you can't like the same book twice at one 
 						time, no matter how many times you read it. */
-			"items": { "type": "object" } /* todo */
+			"items": { "ref": "#/definitions/ranking" }
 		}
 	},
 	"required": ["name", "date-made"]
-	"definitions": 
+	"definitions": {
+		"ranking": {
+			"description": "A pair: the name of a geek phenomenon and how that geek ranks themselves.",
+			"type": "object",
+			"properties": {
+				"name": {"type": "string"},
+				"rank": {"type": "string"}
+			},
+			"required": ["name", "rank"]
+		},
+		"contact" : {
+			"description": "Describes a geek's contact information",
+			"type": "object",
+			"properties": {
+				"contact-type": "string",
+				"contact-value": "string"
+			},
+			"required": ["contact-type", "contact-value"]
+		}
+		"media" : {
+			"description": "Describes a geek's social media information",
+			"type": "object",
+			"properties": {
+				"media-type": "string",
+				"media-locator": "string"
+			},
+			"required": ["media-type", "media-locator"]
+		}
+	}
 }
