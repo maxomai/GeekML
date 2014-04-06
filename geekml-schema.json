@@ -53,7 +53,7 @@
 			"items": { "ref": "#/definitions/ranking" }
 		}
 	},
-	"required": ["name", "date-made"]
+	"required": ["name", "date-made"],
 	"definitions": {
 		"ranking": {
 			"description": "A pair: the name of a geek phenomenon and how that geek ranks themselves.",
