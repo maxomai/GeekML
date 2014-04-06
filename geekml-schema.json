@@ -72,7 +72,7 @@
 				"contact-value": "string"
 			},
 			"required": ["contact-type", "contact-value"]
-		}
+		},
 		"media" : {
 			"description": "Describes a geek's social media information",
 			"type": "object",
