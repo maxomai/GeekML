@@ -2,7 +2,7 @@ GeekML
 ======
 
 Geek Markup Language 0.1
-Copyright (c) 2014 Michael C Smith <maxomai@gmail.com>
+
 
 The purpose of Geek Markup Language (GeekML, or GML) is to be a Geek Code[1] for the Web 2.0 era. By way of background, Geek Code was invented in the pre-web Internet era as a way for geeks (or nerds, or what have you) to briefly 
 describe themselves in a block of barely comprehensible gobeltygook that resembed a PGP public key or public signature. This started as a lark, but became an early Internet phenomenon. Geeks would attach Geek Code Blocks to their emails, append them to .plan files, and so on. 
@@ -15,6 +15,10 @@ References:
 [1] http://www.geekcode.com/
 [2] http://www.geekcode.com/geek.html
 [3] http://json-schema.org/documentation.html
+
+Copyright
+=========
+Copyright (c) 2014 Michael C Smith <maxomai@gmail.com>. Released under MIT license. See LICENSE for details.
 
 History
 =======
