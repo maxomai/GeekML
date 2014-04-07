@@ -59,7 +59,10 @@
 			"description": "Describes a geek's participation in geek phenomena - shows, games, etc.",
 			"properties": {
 				"name": {"type": "string"},
-				"rank": {"type": "string"}
+				"rank": {"enum": 
+					[ "Inventor/Author/World-Class Fan/Expert", "Recognized Fan/Expert", 
+					"Enthusiast/Professional", "Novice", "Disinterested", "Hate it" ]
+					}
 			},
 			"required": ["name", "rank"]
 		},
