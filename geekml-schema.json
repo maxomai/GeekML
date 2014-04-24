@@ -59,6 +59,7 @@
 			"description": "Describes a geek's participation in geek phenomena - shows, games, etc.",
 			"properties": {
 				"name": {"type": "string"},
+				"annote": {"type": "string"},
 				"rank": {"enum": 
 					[ "Inventor/Author/World-Class Fan/Expert", "Recognized Fan/Expert", 
 					"Enthusiast/Professional", "Novice", "Disinterested", "Hate it" ]
@@ -70,6 +71,7 @@
 			"description": "Describes a geek's contact information",
 			"properties": {
 				"contactType": { "type":"string"},
+				"annote": {"type": "string"},
 				"contactValue": {"type":"string"}
 			},
 			"required": ["contactType", "contactValue"]
@@ -78,6 +80,7 @@
 			"description": "Describes a geek's social media information",
 			"properties": {
 				"mediaType": {"type":"string"},
+				"annote": {"type": "string"},
 				"mediaLocator": {"type":"string"}
 			},
 			"required": ["mediaType", "mediaLocator"]
