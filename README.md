@@ -1,7 +1,7 @@
 GeekML
 ======
 
-Geek Markup Language 0.1
+Geek Markup Language 0.1.1
 
 
 The purpose of Geek Markup Language (GeekML, or GML) is to be a Geek Code[1] for the Web 2.0 era. By way of background, Geek Code was invented in the pre-web Internet era as a way for geeks (or nerds, or what have you) to briefly 
@@ -46,4 +46,11 @@ Copyright (c) 2014 Michael C Smith <maxomai@gmail.com>. Released under MIT licen
 
 History
 =======
-2014-04-06 0.1 draft of the JSON schema
+
+Release 0.1.1
+-------------
+2014-04-22 Added 'annote' fields to rankings, contacts, and media.
+
+Release 0.1
+-----------
+2014-04-06 Initial draft of the JSON schema
